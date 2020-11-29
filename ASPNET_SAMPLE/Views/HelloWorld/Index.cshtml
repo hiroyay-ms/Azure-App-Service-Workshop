@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+@*<p>Hello from our View Template!</p>*@
+<p>@ViewData["message"]</p>
+
+@using(Html.BeginForm("Result", "HelloWorld", FormMethod.Post))
+{
+    <input type="text" name="key" /> <input type="submit" value="Submit" />
+}
